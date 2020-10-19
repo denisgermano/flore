@@ -1,0 +1,10 @@
+# ignore sqlite database extensions
+*.sqlite
+*.db
+
+# ignore vscode folder
+.vscode/
+
+# ignore python files and folders
+__pycache__
+*.lock
