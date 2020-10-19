@@ -1,5 +1,6 @@
 from .libraries.base import Base
 
 
-def facede(option: Base):
-    option.create()
+def facede(lib: Base):
+    lib.open()
+    lib.create()

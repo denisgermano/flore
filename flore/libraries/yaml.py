@@ -7,17 +7,22 @@ from .base import Base
 
 
 class Yaml(Base):
+    def __init__(self) -> None:
+        self.migration_dir = None
+        self.files = ("migration.yaml", "seed.yaml", "config.yaml")
+    
+    def open(self):
+        self.migration_dir = "migrations"
+        if not os.path.exists(self.migration_dir):
+            os.mkdir(self.migration_dir)
+
     def create(self):
-        migrations_dir = "migrations"
-
-        if not os.path.exists(migrations_dir):
-            os.mkdir(migrations_dir)
-
-        for file in ("migration.yaml", "seed.yaml", "config.yaml"):
-            file = os.path.join(migrations_dir, file)
-            if not os.path.exists(file):
-                pathlib.Path(file).touch()
-                click.echo(f"{file} created successfully")
-            else:
-                click.echo("we need create nothing.look like good :)")
-                break
+        if self.migration_dir:
+            for file in self.files:
+                file = os.path.join(self.migration_dir, file)
+                if not os.path.exists(file):
+                    pathlib.Path(file).touch()
+                    click.echo(f"{file} created successfully")
+                else:
+                    click.echo("we need create nothing.look like good :)")
+                    break
