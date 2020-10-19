@@ -1,4 +1,4 @@
-from flore import __version__
+from flore.__version__ import __version__
 
 
 def test_version():
