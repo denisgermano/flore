@@ -1,1 +1,3 @@
-__version__ = '0.1.0'
+from .flore import flore_cli
+
+__all__ = ["flore_cli"]
