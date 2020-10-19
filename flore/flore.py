@@ -1,15 +1,17 @@
 import click
 
+from .facede import facede
+from .libraries.yaml import Yaml
+
 
 @click.group()
-def flore_cli(init, migrate):
+def flore_cli():
     """A great option for creating SQL tables in toml format."""
 
 
-@flore_cli.command()
+@flore_cli.command(help="create flore folder")
 def init():
-    """ create flore folder """
-    click.echo("running...")
+    facede(Yaml())
 
 
 @flore_cli.command()
