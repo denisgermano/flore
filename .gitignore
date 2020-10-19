@@ -8,3 +8,4 @@
 # ignore python files and folders
 __pycache__
 *.lock
+.pytest_cache
