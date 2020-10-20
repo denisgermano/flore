@@ -23,25 +23,29 @@ class Postgres(Base):
             print("POSTGRES::Connection established")
         except Exception as e:
             print(str(e))
-    
+
     def create(self):
         """ create tables in postgres database """
 
-        parse = ''
+        parse = ""
 
         for table_name, columns in self.tables.items():
             parse += Parser().parse(table_name, columns)
         if self.conn:
             cursor = self.conn.cursor()
             cursor.execute(parse)
-            
+
             # commit to database
             try:
                 self.conn.commit()
-                print('WOW...We were able to create your tables in the database.')
+                print(
+                    "WOW...We were able to create your tables in the database."
+                )
             except Exception:
                 self.conn.rollback()
-                print('WOW...We were able to create your tables in the database.')
+                print(
+                    "WOW...We were able to create your tables in the database."
+                )
 
             # close connection
             cursor.close()

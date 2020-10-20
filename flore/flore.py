@@ -22,4 +22,3 @@ def run():
     config = safe_load(open_yaml_file("config.yaml"))
     tables = safe_load(open_yaml_file("migration.yaml"))
     facede(Postgres(config, tables["tables"]))
-

@@ -10,7 +10,7 @@ class Yaml(Base):
     def __init__(self) -> None:
         self.migration_dir = None
         self.files = ("migration.yaml", "seed.yaml", "config.yaml")
-    
+
     def open(self):
         self.migration_dir = "migrations"
         if not os.path.exists(self.migration_dir):
