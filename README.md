@@ -9,7 +9,7 @@ We worked as a migration to the database. You can create your migration through 
 You can install the script through of pip command:
 
 ```bash
-pip intall flore-sql
+pip intall flore
 ```
 
 # Usage

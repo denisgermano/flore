@@ -6,8 +6,8 @@ authors = ["Marcus Pereira <hi@marcuspereira.xyz>"]
 license = "MIT"
 readme = "README.md"
 
-repository = "https://github.com/marcuxyz/flore-sql"
-homepage = "https://github.com/marcuxyz/flore-sql"
+repository = "https://github.com/marcuxyz/flore"
+homepage = "https://github.com/marcuxyz/flore"
 keywords = ["python", "flore-sql", "yaml to sql", "yamlsql", "transpile sql", "sql tests", "migrations", "migrate", "orm"]
 
 [tool.poetry.scripts]
