@@ -68,3 +68,9 @@ flore run
 ```
 
 To migrate tables your postgres database.
+
+# Screenshot
+
+![migration.yaml](https://pbs.twimg.com/media/EkxpbhqWkAAmh_R?format=jpg&name=medium)
+![SQL1](https://pbs.twimg.com/media/EkxpckQXUAIYIhg?format=jpg&name=medium)
+![SQL2](https://pbs.twimg.com/media/EkxqWIdWkAIzfXi?format=jpg&name=medium)
