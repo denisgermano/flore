@@ -1,4 +1,4 @@
-![GitHub top language](https://img.shields.io/github/languages/top/marcuxyz/flore-sql) ![GitHub](https://img.shields.io/github/license/marcuxyz/flore-sql) ![GitHub repo size](https://img.shields.io/github/repo-size/marcuxyz/flore-sql)
+![GitHub top language](https://img.shields.io/github/languages/top/marcuxyz/flore) ![GitHub](https://img.shields.io/github/license/marcuxyz/flore) ![GitHub repo size](https://img.shields.io/github/repo-size/marcuxyz/flore)
 
 It's a script to transform yaml file to SQL-code.
 
