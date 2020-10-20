@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "flore-sql"
+name = "flore"
 version = "0.0.1"
 description = "A great option for creating SQL tables in yaml format."
 authors = ["Marcus Pereira <hi@marcuspereira.xyz>"]
