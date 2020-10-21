@@ -14,7 +14,7 @@ keywords = ["python", "flore-sql", "yaml to sql", "yamlsql", "transpile sql", "s
 flore = "flore:flore_cli"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.5"
 click = "^7.1.2"
 PyYAML = "^5.3.1"
 psycopg2-binary = "^2.8.6"
