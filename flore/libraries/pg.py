@@ -1,7 +1,7 @@
 import psycopg2
 
 from flore.libraries.base import Base
-from flore.parser import Parser
+from flore.table import compose
 
 
 class Postgres(Base):
@@ -30,7 +30,7 @@ class Postgres(Base):
         parse = ""
 
         for table_name, columns in self.tables.items():
-            parse += Parser().parse(table_name, columns)
+            parse += compose(table_name, columns)
         if self.conn:
             cursor = self.conn.cursor()
             cursor.execute(parse)
