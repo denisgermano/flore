@@ -14,14 +14,14 @@ keywords = ["python", "flore-sql", "yaml to sql", "yamlsql", "transpile sql", "s
 flore = "flore:flore_cli"
 
 [tool.poetry.dependencies]
-python = "^3.5"
-click = "^7.1.2"
-PyYAML = "^5.3.1"
-psycopg2-binary = "^2.8.6"
+python = "^3.6.1"
+click = "7.1.2"
+PyYAML = "5.3.1"
+psycopg2-binary = "2.8.6"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
-black = "^20.8b1"
+pytest = "5.2"
+black = "20.8b1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
