@@ -2,9 +2,9 @@ from .normalize import normalize
 
 
 def compose(table_name, columns):
-    tables = ''
+    tables = ""
     for name, fields in columns.items():
-        tables += "%s %s, " %(name, normalize(fields))
+        tables += "%s %s, " % (name, normalize(fields))
     return mount_table(table_name, tables)
 
 

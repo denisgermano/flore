@@ -38,14 +38,10 @@ class Postgres(Base):
             # commit to database
             try:
                 self.conn.commit()
-                print(
-                    "WOW...We were able to create your tables in the database."
-                )
+                print("WOW...We were able to create your tables in the database.")
             except Exception:
                 self.conn.rollback()
-                print(
-                    "WOW...We were able to create your tables in the database."
-                )
+                print("WOW...We were able to create your tables in the database.")
 
             # close connection
             cursor.close()
